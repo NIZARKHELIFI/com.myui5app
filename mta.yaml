@@ -12,7 +12,7 @@ modules:
       memory: 512M
     requires:
       - name: myui5app_destination
-      - name: myapp-xsuaa-service
+      - name: myapp-xsuaa-service 
     build-parameters:
       builder: custom 
       commands:
