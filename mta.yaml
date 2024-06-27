@@ -14,7 +14,7 @@ modules:
       - name: myui5app_destination
       - name: myapp-xsuaa-service
     build-parameters:
-      builder: custom
+      builder: custom 
       commands:
         - npm install
         - npm run build:ui --prefix ..
