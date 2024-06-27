@@ -1,0 +1,50 @@
+<mvc:View controllerName="com.myui5app.controller.MainView"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+<IconTabBar id="iconTabBar2" headerMode="Inline" class="sapUiResponsiveContentPadding">
+<items>
+<IconTabFilter id="_IDGenIconTabFilter1" icon="sap-icon://process" key="info" text="Commande d'achattt">
+<content>
+<List noDataText="Drop list items here" id="list0_1717519890372" items="{/ZCommandesAchatSet}">
+<items>
+<StandardListItem type="Navigation" title="EBELN ({Ebeln}) EKGRP ({Ekgrp})" description="Name : {Ernam}" icon="sap-icon://picture" id="item0_1717519890372"/>
+</items>
+</List>
+</content>
+</IconTabFilter>
+<IconTabFilter id="_IDGenIconTabFilter2" icon="sap-icon://attachment" key="attachments" text="Demande d'achat">
+<content>
+<List noDataText="Drop list items here" id="list0" items="{/ZDemandesAchatSet}">
+<items>
+<StandardListItem type="Navigation" title="Banfn({Banfn}) Name : {Ernam}" description="Bnfpo({Bnfpo}) Ekgrp ({Ekgrp})" icon="sap-icon://picture" id="item0"/>
+</items>
+</List>
+</content>
+</IconTabFilter>
+<IconTabFilter id="_IDGenIconTabFilter3" icon="sap-icon://notes" key="notes" text="Notes" count="333">
+<Text id="_IDGenText3" text="Notes go here ..."/>
+</IconTabFilter>
+<IconTabFilter id="_IDGenIconTabFilter4" icon="sap-icon://hint" key="people" text="People" count="34">
+<Text id="_IDGenText4" text="People content goes here ..."/>
+</IconTabFilter>
+</items>
+</IconTabBar>
+<!--   <List noDataText="Drop list items here" id="list0" items="{/ZDemandesAchatSet}">
+        <items>
+            <StandardListItem type="Navigation" title="{Banfn}" description="{Bnfpo}/{Ekgrp}/{Ernam}" icon="sap-icon://picture" id="item0"/>
+        </items>
+    </List>   -->
+<content>
+<!--   <List noDataText="Drop list items here" id="list0_1717519890372" items="{/ZCommandesAchatSet}">
+    
+        <items>
+    
+            <StandardListItem type="Navigation" title="{Ebeln}/{Ekgrp}" description="Name : {Ernam}" icon="sap-icon://picture" id="item0_1717519890372"/>
+    
+        </items>
+    
+    </List>   -->
+</content>
+</Page>
+</mvc:View>

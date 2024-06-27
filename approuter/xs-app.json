@@ -1,0 +1,15 @@
+{
+  "welcomeFile": "uimodule/index.html",
+  "authenticationMethod": "route",
+  "logout": {
+    "logoutEndpoint": "/do/logout"
+  },
+  "routes": [
+    {
+      "source": "^/uimodule/(.*)$",
+      "target": "$1",
+      "authenticationType": "xsuaa",
+      "localDir": "uimodule/webapp"
+    }
+  ]
+}
